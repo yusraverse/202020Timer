@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 100vh;
+    text-align: center;
+    font-family: Roboto; /* uses imported font from html header */
+    padding: 0;
+}
+
+.title{
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 30px; /* adds space between title and next element */
+    color: #F3F3E0;
+}
+
+.timer{
+    font-size: 80px;
+    color: #F3F3E0;
+    margin: 0px;
+    margin-bottom: 30px; /* adds space between title and next element */
+}
+
+.button-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    font-size: 18px;
+    padding: 10px 20px; /* left and right padding */
+    margin: 5px;
+    color:#F3F3E0;
+    border: none;
+    border-radius: 5px; /* makes button corners rounded */
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+button:hover{
+    cursor: pointer; /* makes cursor change to hand when hovering over button */
+    opacity: .8; /* changes button opacity when you hover over it */
+    transition: opacity .3s
+    ease-in-out; /* slows down opacity effect */
+}
+
+#start{ /* targets start button */
+    background-color: #c376b6;
+}
+
+#stop{ /* targets stop button */
+    background-color:#94284c;
+}
+
+#break{
+    background-color: #78489e;
+}
+
+#reset{ /* targets reset button */
+    background-color: #c05b6e;
+}
