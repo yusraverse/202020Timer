@@ -38,13 +38,13 @@ function resetTimer() {
 
 function breakTimer() {
     clearInterval(interval);
-    timeLeft = 20;
+    timeLeft = 21;
     interval=setInterval(()=>{
         timeLeft--; /* decrease time by second */
         updateTimer();
         if(timeLeft == 0) {
             clearInterval(interval); /* reset time */
-            alert('Feeling refreshed? Click the start button to restart the timer!')
+            alert('Nice! Restart the timer to continue.')
         }
     },1000) /* 1 second is 1000 milliseconds */
 }
